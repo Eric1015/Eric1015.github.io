@@ -1,0 +1,16 @@
+.top-image {
+    max-height: 100vh;
+    margin: 0 auto;
+}
+
+.bd-example {
+    background: black;
+}
+
+.content {
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin: 20px 0px;
+    padding: 10px;
+    height: 350px;
+}
