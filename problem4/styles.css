@@ -1,0 +1,44 @@
+body, div {
+    margin: 0;
+}
+
+.landing-image-container {
+    text-align: center;
+    position: relative;
+}
+
+#input-container {
+    position: absolute;
+    left: 20px;
+    top: 10vh;
+}
+
+#landing-image {
+    height: 100vh;
+    margin: 0px auto;
+}
+
+#caption {
+    opacity: 0;
+    font-weight: bold;
+    font-size: 5em;
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 50;
+}
+
+.fade-in {
+    animation: fade-in 5s linear 0s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

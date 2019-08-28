@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="landing-image-container">
+        <div id="input-container">
+            <label>キャプション入力</label>
+            <br>
+            <input id="input" name="input" type="text">
+            <br>
+            <button onclick="submit()">決定</button>
+        </div>
+        <div id="caption">
+            ワンワン！！
+        </div>
+        <img id="landing-image" src="images/dog.jpg" alt="">
+    </div>
+    <script>
+        var image = document.getElementById("landing-image");
+        var caption = document.getElementById("caption");
+
+        image.addEventListener('load', function () {
+            image.classList.add("fade-in");
+            setTimeout(function () {
+                caption.classList.add("fade-in");
+            }, 6000)
+        })
+
+        var input = document.getElementById("input");
+
+        function submit() {
+            caption.innerText = input.value;
+        }
+    </script>
+</body>
+
+</html>
